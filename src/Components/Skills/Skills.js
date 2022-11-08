@@ -26,21 +26,21 @@ const Skills = () => {
             
             <div className="skills-right">
                 
-                <div style={{left: '14rem',}}>
+                <div style={{top: '2rem' ,left: '3.8rem',}}>
                     <Card  
                     img = {PythonLogo}
                     heading = {'Python'}
                     detail = {'python stuff'}
                     />
                 </div>
-                <div style={{top: '12rem',left: '-4rem',}}>
+                <div style={{top: '2rem',left: '-10rem',}}>
                     <Card  
                     img = {JSLogo}
                     heading = {'JavaScript'}
                     detail = {'JavaScript stuff'}
                     />
                 </div>
-                <div style={{top: '19rem',left: '12rem',}}>
+                <div style={{top: '2rem',left: '17.6rem',}}>
                     <Card  
                     img = {JavaLogo}
                     heading = {'Java'}
