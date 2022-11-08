@@ -1,6 +1,6 @@
 import React from "react";
 import './Navbar.css';
-import Logo from '../../assets/images/nathanLogo.png';
+
 
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="nav-wrapper">
         <div className="nav-left">
             <div className="nav-name">Nathan</div>
-            {/* <span>toggle</span> */}
+            <span>toggle</span>
         </div>
         <div className="nav-right">
             <div className="nav-list">

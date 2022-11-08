@@ -1,0 +1,94 @@
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.a-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a-name {
+    display: flex;
+    flex-direction:  column;
+}
+
+.a-name>:nth-child(1){
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.a-name>:nth-child(2){
+    color: orange;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.a-name>:nth-child(3){
+    color: grey;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.a-button {
+    width: 7rem;
+    height: 2rem;
+}
+
+.a-icons {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 2rem;
+    padding-left: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.a-icons>* {
+    transform: scale(2);
+    color: orange;
+}
+
+.a-icons>*:hover {
+    cursor: pointer;
+}
+
+.a-right {
+    flex: 1;
+    position: relative;
+}
+
+.a-right>:nth-child(1) {
+    left: 10rem;
+    transform: scale(1.1);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: orange;
+    font-weight: bold;
+}
+
+.a-right>:nth-child(2) {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    transform: scale(0.9);
+    top: 1.8rem;
+    left: 180px;
+}
+
+.code-icons {
+    top: 18rem;
+    left: 14rem;
+    position: absolute;
+    color: orange;
+    transform: scale(3);
+    display: flex;
+    gap: 25px;
+}
