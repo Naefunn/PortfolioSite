@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './PyProject.css';
-import { SlideData } from "./SlideData";
+import { SlideDataPy } from "./SlideDataPy";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,7 +35,7 @@ if (!Array.isArray(slides) || length <= 0) {
     <section className="slider">
         <FontAwesomeIcon icon={faArrowAltCircleLeft} className="left-arrow" onClick={prevSlide}/>
         <FontAwesomeIcon icon={faArrowAltCircleRight} className="right-arrow" onClick={nextSlide}/>
-        {SlideData.map((slide, index)=>{
+        {SlideDataPy.map((slide, index)=>{
         return (
             <div className={index === current ? 'slide-active' : 'slide'} key={index}>
                 {index === current && (<img src={slide.image} alt="" className="image"/>)}

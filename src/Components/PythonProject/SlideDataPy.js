@@ -4,7 +4,7 @@ import py3 from '../../assets/images/pyPro3.png';
 import py4 from '../../assets/images/pyPro4.png';
 
 
-export const SlideData = [
+export const SlideDataPy = [
     {
         image: py1
     },
