@@ -1,0 +1,33 @@
+.skills {
+    padding: 0 3rem 0 0rem;
+    display: flex;
+    height: 70vh;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.skills-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 250px;
+}
+
+.skills-left>:nth-child(1) {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.skills-left>:nth-child(2) {
+    color: orange;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.skills-left>:nth-child(3) {
+    color: grey;
+    font-size: 20px;
+    margin-top: 1rem;
+}

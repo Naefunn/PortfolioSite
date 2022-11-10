@@ -18,9 +18,9 @@ function App() {
       <Intro/>
       <About/>
       <Skills/>
-      <PyProject slides={SlideDataPy} />
-      <JsProject slides={SlideDataJs} />
       <PoolBuddies slides={SlideDataPB} />
+      <JsProject slides={SlideDataJs} />
+      <PyProject slides={SlideDataPy} />
     </div>
     </>
   );
