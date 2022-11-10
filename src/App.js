@@ -10,12 +10,25 @@ import {  SlideDataPy } from './Components/PythonProject/SlideDataPy';
 import {  SlideDataJs } from './Components/JsProject/SlideDataJs';
 import {  SlideDataPB } from './Components/PoolBuddies/SlideDataPB';
 import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer/Footer';
+import { React, useContext } from 'react'
+import { ThemeContext } from './Context'
+
 
 function App() {
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
+
   return (
     <>
-    <div className="App">
+    <div className="App"
+    style={{
+      background : darkMode? 'black': ' ',
+      color : darkMode? 'white': ' ',
+    }}
+
+    >
       <Navbar/>
       <Intro/>
       <About/>
