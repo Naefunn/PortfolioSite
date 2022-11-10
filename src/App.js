@@ -10,6 +10,7 @@ import {  SlideDataPy } from './Components/PythonProject/SlideDataPy';
 import {  SlideDataJs } from './Components/JsProject/SlideDataJs';
 import {  SlideDataPB } from './Components/PoolBuddies/SlideDataPB';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
