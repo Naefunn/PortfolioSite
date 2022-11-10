@@ -9,6 +9,7 @@ import JsProject from './Components/JsProject/JsProject';
 import {  SlideDataPy } from './Components/PythonProject/SlideDataPy';
 import {  SlideDataJs } from './Components/JsProject/SlideDataJs';
 import {  SlideDataPB } from './Components/PoolBuddies/SlideDataPB';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <PoolBuddies slides={SlideDataPB} />
       <JsProject slides={SlideDataJs} />
       <PyProject slides={SlideDataPy} />
+      <Contact/>
     </div>
     </>
   );
