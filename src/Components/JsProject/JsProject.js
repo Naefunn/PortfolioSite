@@ -34,9 +34,9 @@ const JsProject = ({ slides }) => {
     return (
     <>
     <div className="JS-project">
-        <span style={{color: darkMode? 'white': ''}} >This is my</span>
+        <span style={{color: darkMode? 'white': ''}} >World</span>
         <br/>
-        <span>JavaScript Project</span>
+        <span>School</span>
     </div>
     <section className="slider">
         <FontAwesomeIcon icon={faArrowAltCircleLeft} className="left-arrow" onClick={prevSlide}/>

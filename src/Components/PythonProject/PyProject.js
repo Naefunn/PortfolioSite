@@ -32,9 +32,9 @@ const PyProject = ({ slides }) => {
     return (
     <>
     <div className="python-project">
-        <span style={{color: darkMode? 'white': ''}} >This is my</span>
+        <span style={{color: darkMode? 'white': ''}} >Apps Around</span>
         <br/>
-        <span>Python Project</span>
+        <span>The World</span>
     </div>
     <section className="slider">
         <FontAwesomeIcon icon={faArrowAltCircleLeft} className="left-arrow" onClick={prevSlide}/>

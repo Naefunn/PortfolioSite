@@ -32,9 +32,9 @@ const PoolBuddies = ({ slides }) => {
     return (
     <>
     <div className="poolbuddies-project" id="Projects">
-        <span style={{color: darkMode? 'white': ''}} >This is my</span>
+        <span style={{color: darkMode? 'white': ''}} >Pool</span>
         <br/>
-        <span>Capstone Project</span>
+        <span>Buddies</span>
     </div>
     <section className="slider">
         <FontAwesomeIcon icon={faArrowAltCircleLeft} className="left-arrow" onClick={prevSlide}/>

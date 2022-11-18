@@ -22,9 +22,13 @@ const Skills = () => {
             >
                 <span style={{color: darkMode? 'white': ''}} >My</span>
                 <span>Skills</span>
-                <span>fhjdlsbgjk,d sakvlnjklbgjkds avkjl fhjsvgb hjdfs vj
+                <span>Throughout my time at Codeclan, I have learned
                 <br/>
-                fnjierngjilbfesjklgbhjbesgjhkfbsjvkfhdjklwvhf
+                many skills, including: 3 programming languages,
+                <br/>
+                multiple frameworks, TDD, as well as soft skills
+                <br/>
+                such as presenting and working efficiently in teams. 
                 </span>
                 <a href={cv} download>
 
@@ -39,21 +43,22 @@ const Skills = () => {
                     <Card  
                     img = {PythonLogo}
                     heading = {'Python'}
-                    detail = {'python stuff'}
+                    detail = {'Flask, UnitTesting'}
+                
                     />
                 </div>
                 <div style={{top: '2rem',left: '-10rem',}}>
                     <Card  
                     img = {JSLogo}
                     heading = {'JavaScript'}
-                    detail = {'JavaScript stuff'}
+                    detail = {'Node, React, Cypress'}
                     />
                 </div>
                 <div style={{top: '2rem',left: '17.6rem',}}>
                     <Card  
                     img = {JavaLogo}
                     heading = {'Java'}
-                    detail = {'Java stuff'}
+                    detail = {'Spring, JUnit, IntelliJ'}
                     />
                 </div>
             </div>
