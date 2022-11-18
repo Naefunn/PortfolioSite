@@ -1,18 +1,26 @@
-import React from "react";
+import { useContext, React} from "react";
 import './Skills.css';
 import PythonLogo from "../../assets/images/pythonLogo.png";
 import JSLogo from "../../assets/images/JSlogo.png";
 import JavaLogo from "../../assets/images/javaLogo.png";
 import Card from "../Card/Card";
-import cv from "./nfcv.pdf"
-
+import cv from "./nfcv.pdf";
+import { ThemeContext } from "../../Context";
 
 const Skills = () => {
+
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
+
     return (
         <>
-        <div className="skills">
-            <div className="skills-left">
-                <span>My</span>
+        <div className="skills" id="Skills"
+        >
+            <div className="skills-left"
+            >
+                <span style={{color: darkMode? 'white': ''}} >My</span>
                 <span>Skills</span>
                 <span>fhjdlsbgjk,d sakvlnjklbgjkds avkjl fhjsvgb hjdfs vj
                 <br/>
@@ -26,7 +34,8 @@ const Skills = () => {
             
             <div className="skills-right">
                 
-                <div style={{top: '2rem' ,left: '3.8rem',}}>
+                <div 
+                style={{top: '2rem' ,left: '3.8rem',}}>
                     <Card  
                     img = {PythonLogo}
                     heading = {'Python'}

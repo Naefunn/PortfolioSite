@@ -1,34 +1,40 @@
-import React, { useState } from "react";
+import {React, useContext, useState } from "react";
 import './JsProject.css';
 import { SlideDataJs } from "./SlideDataJs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { ThemeContext    } from "../../Context";
 
 
 
 const JsProject = ({ slides }) => {
-const [current, setCurrent] =useState(0);
-const length = slides.length;
 
-const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1)
-};
-
-const prevSlide = () => {
-    setCurrent(current === 0 ? length -1 : current - 1)
-}
-
-console.log(current)
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
 
-if (!Array.isArray(slides) || length <= 0) {
-    return null;
-};
+    const [current, setCurrent] =useState(0);
+    const length = slides.length;
+
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1)
+    };
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length -1 : current - 1)
+    }
+
+
+
+
+    if (!Array.isArray(slides) || length <= 0) {
+        return null;
+    };
 
     return (
     <>
     <div className="JS-project">
-        <span>This is my</span>
+        <span style={{color: darkMode? 'white': ''}} >This is my</span>
         <br/>
         <span>JavaScript Project</span>
     </div>

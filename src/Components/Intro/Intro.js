@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useContext} from "react";
 import './Intro.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,15 +10,20 @@ import {
   } from '@fortawesome/free-brands-svg-icons';
 import portimage from'../../assets/images/greySelfie.png';
 import { faTerminal } from "@fortawesome/free-solid-svg-icons";
-
+import {Link} from 'react-scroll'
+import { ThemeContext } from "../../Context";
 
 
 const Intro = () => {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="intro">
             <div className="a-left">
                 <div className="a-name">
-                    <span>Hi, I'm</span>
+                    <span style={{color: darkMode? 'white': ''}}>Hi, I'm</span>
                     <span>Nathan Foster</span>
                     <span>
                         Welcome to my portfolio website. Have a look about
@@ -27,8 +32,9 @@ const Intro = () => {
                          me!
                     </span>
                 </div>
-                <button className="button a-button">Contact Me</button>
-                
+                <Link spy={true} to='Contact' smooth={true} activeClass='activeClass'>
+                    <button className="button a-button">Contact Me</button>
+                </Link>
                 <div className="a-icons">
 
                     <a href="https://www.linkedin.com/in/nathan-d-foster/">

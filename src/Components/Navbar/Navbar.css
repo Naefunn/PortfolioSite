@@ -34,7 +34,7 @@
     margin-right: 4rem;
 }
 
-.nav-list>ul>li:hover {
+.nav-list>ul>:hover {
     cursor: pointer;
     color: orange;
 }

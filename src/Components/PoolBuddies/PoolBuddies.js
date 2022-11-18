@@ -1,35 +1,38 @@
-import { React, useState } from "react";
+import { React, useState, useContext } from "react";
 import './PoolBuddies.css';
 import { SlideDataPB } from "./SlideDataPB";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
-
+import { ThemeContext } from "../../Context";
 
 
 
 const PoolBuddies = ({ slides }) => {
-const [current, setCurrent] =useState(0);
-const length = slides.length;
 
-const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1)
-};
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
-const prevSlide = () => {
-    setCurrent(current === 0 ? length -1 : current - 1)
-}
+    const [current, setCurrent] =useState(0);
+    const length = slides.length;
 
-console.log(current)
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1)
+    };
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length -1 : current - 1)
+    }
 
 
-if (!Array.isArray(slides) || length <= 0) {
-    return null;
-};
+
+    if (!Array.isArray(slides) || length <= 0) {
+        return null;
+    };
 
     return (
     <>
-    <div className="poolbuddies-project">
-        <span>This is my</span>
+    <div className="poolbuddies-project" id="Projects">
+        <span style={{color: darkMode? 'white': ''}} >This is my</span>
         <br/>
         <span>Capstone Project</span>
     </div>
