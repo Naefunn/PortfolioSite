@@ -31,7 +31,7 @@ const PyProject = ({ slides }) => {
 
     return (
     <>
-    <div className="python-project">
+    <div className="python-project" id="Python">
         <span style={{color: darkMode? 'white': ''}} >Apps Around</span>
         <br/>
         <span>The World</span>

@@ -44,7 +44,7 @@ const Skills = () => {
                     img = {PythonLogo}
                     heading = {'Python'}
                     detail = {'Flask, UnitTesting'}
-                
+                    href='Python'
                     />
                 </div>
                 <div style={{top: '2rem',left: '-10rem',}}>
